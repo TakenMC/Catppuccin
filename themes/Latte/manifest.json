@@ -1,0 +1,34 @@
+{
+  "id": "org.mairimashita.Catppuccin.Latte",
+  "name": "Catppuccin - Latte",
+  "description": "A soothing pastel latte flavored theme.",
+  "author": [
+    {
+      "name": "Taken",
+      "discordID": "223110287165882368",
+      "github": "TakenMC"
+    },
+    {
+      "name": "Saltssaumure",
+      "discordID": "134142022092062720",
+      "github": "Saltssaumure"
+    },
+    {
+      "name": "Catppuccin",
+      "github": "catppuccin"
+    }
+  ],
+  "version": "1.0.1",
+  "updater": {
+    "type": "store",
+    "id": "org.mairimashita.Catppuccin.Latte"
+  },
+  "license": "MIT",
+  "type": "replugged-theme",
+  "main": "../../scss/latte.scss",
+  "source": "https://github.com/TakenMC/Catppuccin",
+  "image": [
+    "https://raw.githubusercontent.com/TakenMC/Catppuccin/main/assets/latte.webp",
+    "https://raw.githubusercontent.com/TakenMC/Catppuccin/main/assets/preview.webp"
+  ]
+}

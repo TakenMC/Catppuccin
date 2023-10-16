@@ -1,0 +1,34 @@
+{
+  "id": "org.mairimashita.Catppuccin.Frappe",
+  "name": "Catppuccin - Frappe",
+  "description": "A soothing pastel frappe flavored theme.",
+  "author": [
+    {
+      "name": "Taken",
+      "discordID": "223110287165882368",
+      "github": "TakenMC"
+    },
+    {
+      "name": "Saltssaumure",
+      "discordID": "134142022092062720",
+      "github": "Saltssaumure"
+    },
+    {
+      "name": "Catppuccin",
+      "github": "catppuccin"
+    }
+  ],
+  "version": "1.0.1",
+  "updater": {
+    "type": "store",
+    "id": "org.mairimashita.Catppuccin.Frappe"
+  },
+  "license": "MIT",
+  "type": "replugged-theme",
+  "main": "../../scss/frappe.scss",
+  "source": "https://github.com/TakenMC/Catppuccin",
+  "image": [
+    "https://raw.githubusercontent.com/TakenMC/Catppuccin/main/assets/frappe.webp",
+    "https://raw.githubusercontent.com/TakenMC/Catppuccin/main/assets/preview.webp"
+  ]
+}
