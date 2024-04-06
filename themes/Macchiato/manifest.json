@@ -18,7 +18,7 @@
       "github": "catppuccin"
     }
   ],
-  "version": "1.0.1",
+  "version": "2.0.0",
   "updater": {
     "type": "store",
     "id": "org.mairimashita.Catppuccin.Macchiato"
