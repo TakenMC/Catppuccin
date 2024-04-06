@@ -144,176 +144,164 @@ $brand: $blue;
     --button-outline-positive-border: #{$green};
     --button-outline-positive-background: transparent;
     --button-outline-positive-background-hover: #{darken(
- $green,
-    math.div(5%, 2))
-}
+            $green,
+            math.div(5%, 2)
+        )};
+    --button-outline-positive-text-hover: #{$base};
+    --button-outline-positive-border-hover: #{darken($green, math.div(5%, 2))};
+    --button-outline-positive-background-active: #{darken(
+            $green,
+            math.div(10%, 2)
+        )};
+    --button-outline-positive-text-active: #{$base};
+    --button-outline-positive-border-active: #{darken($green, math.div(5%, 2))};
 
-;
---button-outline-positive-text-hover: #{$base};
---button-outline-positive-border-hover: #{darken($green, math.div(5%, 2))};
---button-outline-positive-background-active: #{darken(
- $green,
-math.div(10%, 2))
-}
+    --button-outline-brand-text: #{$text};
+    --button-outline-brand-border: #{$brand};
+    --button-outline-brand-background: transparent;
+    --button-outline-brand-background-hover: #{darken($brand, math.div(5%, 2))};
+    --button-outline-brand-text-hover: #{$base};
+    --button-outline-brand-border-hover: #{darken($brand, math.div(5%, 2))};
+    --button-outline-brand-background-active: #{darken($brand, math.div(10%, 2))};
+    --button-outline-brand-text-active: #{$base};
+    --button-outline-brand-border-active: #{darken($brand, math.div(5%, 2))};
 
-;
---button-outline-positive-text-active: #{$base};
---button-outline-positive-border-active: #{darken($green, math.div(5%, 2))};
+    --button-outline-primary-text: #{$text};
+    --button-outline-primary-border: #{$surface2};
+    --button-outline-primary-background: transparent;
+    --button-outline-primary-background-hover: #{darken(
+            $surface2,
+            math.div(5%, 2)
+        )};
+    --button-outline-primary-text-hover: #{$base};
+    --button-outline-primary-border-hover: #{darken($surface2, math.div(5%, 2))};
+    --button-outline-primary-background-active: #{darken(
+            $surface2,
+            math.div(10%, 2)
+        )};
+    --button-outline-primary-text-active: #{$base};
+    --button-outline-primary-border-active: #{darken($surface2, math.div(5%, 2))};
 
---button-outline-brand-text: #{$text};
---button-outline-brand-border: #{$brand};
---button-outline-brand-background: transparent;
---button-outline-brand-background-hover: #{darken($brand, math.div(5%, 2))};
---button-outline-brand-text-hover: #{$base};
---button-outline-brand-border-hover: #{darken($brand, math.div(5%, 2))};
---button-outline-brand-background-active: #{darken($brand, math.div(10%, 2))};
---button-outline-brand-text-active: #{$base};
---button-outline-brand-border-active: #{darken($brand, math.div(5%, 2))};
+    --modal-background: #{$base};
+    --modal-footer-background: #{$crust};
 
---button-outline-primary-text: #{$text};
---button-outline-primary-border: #{$surface2};
---button-outline-primary-background: transparent;
---button-outline-primary-background-hover: #{darken(
- $surface2,
-math.div(5%, 2))
-}
+    --scrollbar-thin-thumb: #{$brand};
+    --scrollbar-thin-track: transparent;
+    --scrollbar-auto-thumb: #{$brand};
+    --scrollbar-auto-track: #{$crust};
 
-;
---button-outline-primary-text-hover: #{$base};
---button-outline-primary-border-hover: #{darken($surface2, math.div(5%, 2))};
---button-outline-primary-background-active: #{darken(
- $surface2,
-math.div(10%, 2))
-}
+    --scrollbar-auto-scrollbar-color-thumb: #{$brand};
+    --scrollbar-auto-scrollbar-color-track: #{$crust};
 
-;
---button-outline-primary-text-active: #{$base};
---button-outline-primary-border-active: #{darken($surface2, math.div(5%, 2))};
+    --input-background: #{$crust};
+    --input-placeholder-text: #{$subtext1};
 
---modal-background: #{$base};
---modal-footer-background: #{$crust};
+    --logo-primary: #{$text};
 
---scrollbar-thin-thumb: #{$brand};
---scrollbar-thin-track: transparent;
---scrollbar-auto-thumb: #{$brand};
---scrollbar-auto-track: #{$crust};
+    --control-brand-foreground: #{$brand};
+    --control-brand-foreground-new: #{$brand};
 
---scrollbar-auto-scrollbar-color-thumb: #{$brand};
---scrollbar-auto-scrollbar-color-track: #{$crust};
+    --background-mentioned: #{adjust-color($yellow, $alpha: -0.9)};
+    --background-mentioned-hover: #{adjust-color($yellow, $alpha: -0.92)};
+    --background-message-hover: #{adjust-color($crust, $alpha: -0.93)};
+    --background-message-automod: #{adjust-color($rosewater, $alpha: -0.95)};
+    --background-message-automod-hover: #{adjust-color($rosewater, $alpha: -0.9)};
+    --background-message-highlight: #{adjust-color($brand, $alpha: -0.9)};
+    --background-message-highlight-hover: #{adjust-color($brand, $alpha: -0.92)};
 
---input-background: #{$crust};
---input-placeholder-text: #{$subtext1};
+    --channels-default: #{darken($subtext0, 5%)};
+    --channel-icon: #{darken($subtext0, 5%)};
+    --channel-text-area-placeholder: #{adjust-color($text, $alpha: -0.5)};
+    --channeltextarea-background: #{$mantle};
 
---logo-primary: #{$text};
+    --activity-card-background: #{$crust};
 
---control-brand-foreground: #{$brand};
---control-brand-foreground-new: #{$brand};
+    --textbox-markdown-syntax: #{$overlay0};
 
---background-mentioned: #{adjust-color($yellow, $alpha: -0.9)};
---background-mentioned-hover: #{adjust-color($yellow, $alpha: -0.92)};
---background-message-hover: #{adjust-color($crust, $alpha: -0.93)};
---background-message-automod: #{adjust-color($rosewater, $alpha: -0.95)};
---background-message-automod-hover: #{adjust-color($rosewater, $alpha: -0.9)};
---background-message-highlight: #{adjust-color($brand, $alpha: -0.9)};
---background-message-highlight-hover: #{adjust-color($brand, $alpha: -0.92)};
+    --spoiler-revealed-background: #{$surface0};
+    --spoiler-hidden-background: #{$surface2};
 
---channels-default: #{darken($subtext0, 5%)};
---channel-icon: #{darken($subtext0, 5%)};
---channel-text-area-placeholder: #{adjust-color($text, $alpha: -0.5)};
---channeltextarea-background: #{$mantle};
+    --android-navigation-bar-background: #{$crust};
+    --android-ripple: #{adjust-color($crust, $alpha: -0.7)};
 
---activity-card-background: #{$crust};
+    --deprecated-card-bg: #{adjust-color($crust, $alpha: -0.4)};
+    --deprecated-card-editable-bg: #{adjust-color($crust, $alpha: -0.7)};
 
---textbox-markdown-syntax: #{$overlay0};
+    --deprecated-store-bg: #{$base};
+    --deprecated-quickswitcher-input-background: #{darken(
+            $surface2,
+            math.div(10%, 2)
+        )};
+    --deprecated-quickswitcher-input-placeholder: #{adjust-color(
+            $crust,
+            $alpha: -0.7
+        )};
+    --deprecated-text-input-bg: #{$crust};
+    --deprecated-text-input-border: #{adjust-color($crust, $alpha: -0.7)};
+    --deprecated-text-input-border-hover: #{darken($crust, math.div(10%, 2))};
+    --deprecated-text-input-border-disabled: #{$mantle};
+    --deprecated-text-input-prefix: #{$subtext0};
 
---spoiler-revealed-background: #{$surface0};
---spoiler-hidden-background: #{$surface2};
+    --focus-primary: #{$brand};
 
---android-navigation-bar-background: #{$crust};
---android-ripple: #{adjust-color($crust, $alpha: -0.7)};
+    --interactive-normal: #{$text};
+    --interactive-muted: #{adjust-color($text, $alpha: -0.7)};
+    --interactive-hover: #{$text};
+    --interactive-active: #{$text};
 
---deprecated-card-bg: #{adjust-color($crust, $alpha: -0.4)};
---deprecated-card-editable-bg: #{adjust-color($crust, $alpha: -0.7)};
+    // "spine" svgs before threads
+    svg[class^="spine"] {
+        color: $surface2;
+    }
 
---deprecated-store-bg: #{$base};
---deprecated-quickswitcher-input-background: #{darken(
- $surface2,
-math.div(10%, 2))
-}
+    // rainbow threads
+    ul[aria-label$=" threads"] > li:nth-child(1n) {
+        --channels-default: #{mix($red, $text, 30%)};
+        --interactive-hover: #{$red};
+        --interactive-active: #{$red};
+    }
 
-;
---deprecated-quickswitcher-input-placeholder: #{adjust-color(
- $crust,
-$alpha: -0.7)
-}
+    ul[aria-label$=" threads"] > li:nth-child(2n) {
+        --channels-default: #{mix($peach, $text, 30%)};
+        --interactive-hover: #{$peach};
+        --interactive-active: #{$peach};
+    }
 
-;
---deprecated-text-input-bg: #{$crust};
---deprecated-text-input-border: #{adjust-color($crust, $alpha: -0.7)};
---deprecated-text-input-border-hover: #{darken($crust, math.div(10%, 2))};
---deprecated-text-input-border-disabled: #{$mantle};
---deprecated-text-input-prefix: #{$subtext0};
+    ul[aria-label$=" threads"] > li:nth-child(3n) {
+        --channels-default: #{mix($yellow, $text, 30%)};
+        --interactive-hover: #{$yellow};
+        --interactive-active: #{$yellow};
+    }
 
---focus-primary: #{$brand};
+    ul[aria-label$=" threads"] > li:nth-child(4n) {
+        --channels-default: #{mix($green, $text, 30%)};
+        --interactive-hover: #{$green};
+        --interactive-active: #{$green};
+    }
 
---interactive-normal: #{$text};
---interactive-muted: #{adjust-color($text, $alpha: -0.7)};
---interactive-hover: #{$text};
---interactive-active: #{$text};
+    ul[aria-label$=" threads"] > li:nth-child(5n) {
+        --channels-default: #{mix($blue, $text, 30%)};
+        --interactive-hover: #{$sapphire};
+        --interactive-active: #{$sapphire};
+    }
 
-// "spine" svgs before threads
-svg[class^="spine"] {
-    color: $surface2;
-}
-
-// rainbow threads
-ul[aria-label$=" threads"]>li:nth-child(1n) {
-    --channels-default: #{mix($red, $text, 30%)};
-    --interactive-hover: #{$red};
-    --interactive-active: #{$red};
-}
-
-ul[aria-label$=" threads"]>li:nth-child(2n) {
-    --channels-default: #{mix($peach, $text, 30%)};
-    --interactive-hover: #{$peach};
-    --interactive-active: #{$peach};
-}
-
-ul[aria-label$=" threads"]>li:nth-child(3n) {
-    --channels-default: #{mix($yellow, $text, 30%)};
-    --interactive-hover: #{$yellow};
-    --interactive-active: #{$yellow};
-}
-
-ul[aria-label$=" threads"]>li:nth-child(4n) {
-    --channels-default: #{mix($green, $text, 30%)};
-    --interactive-hover: #{$green};
-    --interactive-active: #{$green};
-}
-
-ul[aria-label$=" threads"]>li:nth-child(5n) {
-    --channels-default: #{mix($blue, $text, 30%)};
-    --interactive-hover: #{$sapphire};
-    --interactive-active: #{$sapphire};
-}
-
-ul[aria-label$=" threads"]>li:nth-child(6n) {
-    --channels-default: #{mix($mauve, $text, 30%)};
-    --interactive-hover: #{$mauve};
-    --interactive-active: #{$mauve};
-}
+    ul[aria-label$=" threads"] > li:nth-child(6n) {
+        --channels-default: #{mix($mauve, $text, 30%)};
+        --interactive-hover: #{$mauve};
+        --interactive-active: #{$mauve};
+    }
 }
 
 nav[class*="guilds-"].theme-dark {
     @import "@catppuccin/palette/scss/mocha";
 
     // server icons
-    foreignObject>div[data-list-item-id^="guildsnav_"] {
+    foreignObject > div[data-list-item-id^="guildsnav_"] {
         background-color: lighten($base, 2%);
 
         &:hover,
         &[class*="selected"] {
-            >div[class^="childWrapper"] {
+            > div[class^="childWrapper"] {
                 color: $crust;
                 font-weight: 600;
             }
@@ -335,14 +323,14 @@ nav[class*="guilds-"].theme-dark {
     }
 
     // create server/discovery
-    div[data-list-item-id="guildsnav___create-join-button"] svg>path,
-    div[data-list-item-id="guildsnav___guild-discover-button"] svg>path {
+    div[data-list-item-id="guildsnav___create-join-button"] svg > path,
+    div[data-list-item-id="guildsnav___guild-discover-button"] svg > path {
         fill: $green;
     }
 
     // server list icons
     div[class^="upperBadge"] {
-        >div[class^="iconBadge"] {
+        > div[class^="iconBadge"] {
             path {
                 color: $base;
             }
