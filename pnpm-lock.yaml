@@ -14,14 +14,14 @@ devDependencies:
     specifier: ^0.1.4
     version: 0.1.4
   '@catppuccin/palette':
-    specifier: ^1.1.0
-    version: 1.1.0
+    specifier: ^1.1.1
+    version: 1.1.1
   prettier:
     specifier: ^3.2.5
     version: 3.2.5
   salt-bd-scss:
-    specifier: ^1.2.1
-    version: 1.2.1
+    specifier: ^1.2.2
+    version: 1.2.2
 
 packages:
 
@@ -29,8 +29,8 @@ packages:
     resolution: {integrity: sha512-PEzMrpE7VvXFLvQuNAomTcvAuXUJlBlcqvSqhHYFapSxBKye+auNokemssEVuv053KH7Go44Aa4sE+rZNOM5cQ==}
     dev: true
 
-  /@catppuccin/palette@1.1.0:
-    resolution: {integrity: sha512-ef3q3/MfdKc2EmUWiLrBrBKLFMGbukC1mzJh+QPINP7ovmUQycImSRjf/LMD4ti9lcu9NrYv4++zeoO2Z5lPxQ==}
+  /@catppuccin/palette@1.1.1:
+    resolution: {integrity: sha512-wgITbl3OEIUnv8WPTdG2BGjepSMZtJW9V4XpxNDJjCvel0Q5+BxRmKH3XYN0vVjohHR+APCyZCpzSnO+GdsTLg==}
     dev: true
 
   /@codemirror/autocomplete@6.12.0(@codemirror/language@6.10.1)(@codemirror/state@6.4.1)(@codemirror/view@6.24.1)(@lezer/common@1.2.1):
@@ -1356,8 +1356,8 @@ packages:
       mri: 1.2.0
     dev: true
 
-  /salt-bd-scss@1.2.1:
-    resolution: {integrity: sha512-9HfRk7g1vh/7Fp/77uAP9d31fOeH8LX8j+RDHPQvnC3AWA28L9ZBYn97lGfE6O4LNJCqvJCsZMG9dqBrTMI1OA==}
+  /salt-bd-scss@1.2.2:
+    resolution: {integrity: sha512-JL3ZX4cCBnYN+8aB4YuvJ+6SQsjWTrqutyQ0gYRm3zzdMgH8JECz47KYf+EIQNIDk/WjacVPL4g7s8gKhVNNMA==}
     hasBin: true
     dependencies:
       autoprefixer: 10.4.16(postcss@8.4.31)
