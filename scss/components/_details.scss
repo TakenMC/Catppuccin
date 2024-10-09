@@ -4,8 +4,7 @@ rect[fill="#23a55a"],
 rect[fill="#299f5b"],
 foreignObject[mask="url(#svg-mask-status-online)"] > div,
 div[class^="dotOnline"],
-i[class^="statusOnline"],
-div[style*="background-color: rgb(35, 165, 90)"] {
+i[class^="statusOnline"] {
     fill: $green !important;
     background-color: $green !important;
 }
@@ -106,8 +105,7 @@ span[class*="username_"][style*="color: rgb(53, 57, 64)"] {
 
 // server badges
 div[class^="flowerStarContainer"] {
-    &[class*="verified_"],
-    &[class*="connectedAccountVerifiedIcon_"] {
+    &[class*="verified_"] {
         svg[class^="flowerStar"] path {
             fill: $green;
         }
@@ -193,25 +191,6 @@ div[class^="newChannel"] {
 // Clyde AI Bot tag
 div[class^="botTag"] {
     background-color: $brand;
-}
-
-//poll badge
-div[class^="pollBadgeDefault"] {
-    div[class^="text-xs-semibold"] {
-        color: $crust !important;
-    }
-    svg path {
-        fill: $crust !important;
-    }
-}
-
-//poll itself
-div[class*="pollContainer"] {
-    background-color: $mantle !important;
-
-    div[class^="answerInner"] {
-        background-color: $surface0;
-    }
 }
 
 // Add Friend text box border on selection should use accent
@@ -355,4 +334,12 @@ div[class*="actions_"] {
     div[class^="panelButtonContainer"] button svg > path {
         fill: $text !important;
     }
+}
+
+// Loading tip keys
+div[class*="fixClipping"]
+    div[class^="tip"]
+    div[class*="keybind"]
+    span[class^="key"] {
+    color: $crust;
 }

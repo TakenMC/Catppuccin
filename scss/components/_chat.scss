@@ -1,4 +1,17 @@
 [class^="chatContent"] {
+    div[class*="wrapperAudio_"],
+    div[class*="imageWrapper_"] {
+        div[class*="audioControls"],
+        div[class*="videoControls_"] {
+            background-color: #{adjust-color($mantle, $alpha: -0.2)};
+
+            svg[class*="controlIcon_"] {
+                opacity: 1;
+                color: $subtext1;
+            }
+        }
+    }
+
     // new message ruler
     #---new-messages-bar {
         span[class^="unreadPill"] {
@@ -10,15 +23,6 @@
     div[class^="newMessagesBar"] {
         button {
             color: $crust;
-        }
-    }
-
-    // reply bar
-    [class^="attachedBars_"] {
-        background: $crust;
-
-        [class^="replyBar_"] {
-            background: $crust;
         }
     }
 
@@ -119,23 +123,6 @@
                 background-color: $green;
                 color: $crust;
             }
-        }
-    }
-}
-
-div[class*="wrapperAudio_"],
-div[class*="imageWrapper_"] {
-    div[class*="audioControls"],
-    div[class*="videoControls_"] {
-        background-color: #{adjust-color($crust, $alpha: -0.2)};
-
-        svg[class*="controlIcon_"] {
-            opacity: 1;
-            color: $subtext1;
-        }
-
-        div[class*="mediaBarInteractionVolume"] {
-            background-color: #{adjust-color($crust, $alpha: -0.2)};
         }
     }
 }
@@ -272,13 +259,18 @@ div[class^="channelTextArea"] button[class*="emojiButton_"] {
 
 // forums
 div[class^="chat"] > div[class^="content"] > div[class^="container"] {
-    div[data-list-id^="forum-channel"] {
+    div[class^="chatContainer"] > div[class^="container"] {
         background-color: $base;
     }
 
     div[class^="grid"][class*="scrollerBase"],
-    > div[class^="chatContainer"] {
+    > div[class^="chatContainer"] > div[class^="container"] {
         background-color: $base;
+    }
+
+    // Help keys
+    div[class^="matchingPostsRow"] span[class^="key"] {
+        color: $crust !important;
     }
 
     // forum icons
@@ -403,6 +395,11 @@ div[class^="callContainer"] {
         &:hover {
             color: $text;
         }
+    }
+
+    div[class*="tile_"],
+    div[class*="background_"] {
+        background-color: $base !important;
     }
 
     div[class*="overlayTitle"],
@@ -559,45 +556,43 @@ div[class*="giftCodeContainer"] [class*="tile"] {
 
 // channels & roles
 div[class*="chat_"] {
+    // header
+    section[class*="header_"] {
+        background-color: $mantle;
+    }
+
     div[class*="content_"][class*="container_"] {
-        // customise
-        div[class^="profileCard_"] {
-            background-color: $surface0;
-            div[class^="role_"] {
-                background-color: $mantle;
+        background-color: $mantle;
+
+        div[class*="container"] {
+            background-color: $mantle;
+        }
+
+        div[class*="search_"] {
+            background-color: $base !important;
+
+            input::placeholder {
+                color: $overlay0;
             }
         }
 
-        div[class^="prompt_"] {
-            background-color: $surface0;
-            div[class^="optionButtonWrapper_"][class*="selected_"] {
-                background-color: $mantle;
-                border-color: $mantle;
-            }
-            div[class^="select_"] {
-                div[class$="control"] {
-                    background-color: $mantle;
-                    border-color: $mantle;
-                    div[class^="selectValuePill_"] {
-                        background-color: $surface0;
-                    }
-                }
-                div[class$="menu"] {
-                    background-color: $base;
-                    border-color: $mantle;
-                }
-            }
-        }
-
-        // channels
-        div[class*="search_"] input::placeholder {
-            color: $overlay1;
-        }
-        div[class^="channelRow_"] {
-            background-color: $surface0;
-            &:hover:not([class*="disabled_"]) {
+        div[class*="browser"] {
+            div[class*="content"] div[class^="container"] {
                 background-color: $base;
             }
+        }
+
+        div[class*="scrollerContainer_"] {
+            background-color: $mantle;
+
+            div[class*="checkIcon_"][style*="opacity: 1;"] > svg > path {
+                fill: $crust;
+            }
+        }
+
+        div[role="tablist"] {
+            background-color: $mantle;
+            border-bottom: 2px solid $surface0;
         }
     }
 }
@@ -679,7 +674,7 @@ div[class*="chat_"] {
 div[class^="chat"][class*="page_"] {
     &,
     div[class*="content_"][class*="container_"] {
-        background-color: $crust !important;
+        background-color: $crust;
     }
 }
 
@@ -710,19 +705,19 @@ div[class^="upperContainer"] div[class^="akaBadge"] {
 // system message icons
 div[class^="message"][class*="isSystemMessage"] div[class^="icon"] {
     // User Joined icon
-    &[style*="/assets/b754caa743f8c49fbbf0.svg"],
+    &[style*="/assets/7378a83d74ce97d83380.svg"],
   // Answered call icon
-  &[style*="/assets/d750b80048af0194841b.svg"] {
+  &[style*="/assets/9f3b9c1b6e5f77294951.svg"] {
         @include recolor($green);
     }
 
     // Missed call icon
-    &[style*="/assets/27552340cbc7f06073e6.svg"] {
+    &[style*="/assets/a1d461025204711133ec.svg"] {
         @include recolor($subtext0);
     }
 
     // User left icon
-    &[style*="/assets/27552340cbc7f06073e6.svg"] {
+    &[style*="/assets/192510ade1abc3149b46.svg"] {
         @include recolor($red);
     }
 }

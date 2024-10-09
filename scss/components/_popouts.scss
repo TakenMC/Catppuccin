@@ -574,9 +574,16 @@ button#reaction-picker-tab div[class^="contents"] {
     color: $crust;
 }
 
-// Keybinds popout
-div[class^="combo_"] span[class^="key"] svg g {
-    fill: $text !important;
+div[class*="keyboardShortcutsModal_"] {
+    background-color: $mantle !important;
+
+    div[class^="keybindShortcut"] span[class^="key"] {
+        color: $crust;
+
+        svg g {
+            fill: $crust !important;
+        }
+    }
 }
 
 div[class^="planOptionClickableContainer"] {
@@ -664,15 +671,6 @@ div[class*="userProfileOuter_"] {
     }
 }
 
-// Thought bubble
-div[class^="statusBubbleOuter"] {
-    &:before,
-    &:after,
-    span[class^="statusBubble"] {
-        background-color: $mantle;
-    }
-}
-
 [class*="layerContainer_"] [id^="slate_toolbar"] {
     background-color: var(--background-floating);
 
@@ -713,6 +711,15 @@ div[class^="layerContainer"] div[aria-label="clyde"] {
 div[class^="layerContainer"] div[class^="pencilContainer"] {
     svg[class^="editIcon"] {
         color: $text;
+    }
+}
+
+// Keybinds popout
+div[class^="keyboardShortcutsModal"] span[class^="key"] {
+    color: $crust !important;
+
+    svg g {
+        fill: $crust !important;
     }
 }
 
