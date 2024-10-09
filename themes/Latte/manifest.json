@@ -25,7 +25,7 @@
   },
   "license": "MIT",
   "type": "replugged-theme",
-  "main": "../../scss/latte.scss",
+  "main": "../../src/latte.scss",
   "source": "https://github.com/TakenMC/Catppuccin",
   "image": [
     "https://raw.githubusercontent.com/TakenMC/Catppuccin/main/assets/latte.webp",

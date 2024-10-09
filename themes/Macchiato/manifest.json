@@ -25,7 +25,7 @@
   },
   "license": "MIT",
   "type": "replugged-theme",
-  "main": "../../scss/macchiato.scss",
+  "main": "../../src/macchiato.scss",
   "source": "https://github.com/TakenMC/Catppuccin",
   "image": [
     "https://raw.githubusercontent.com/TakenMC/Catppuccin/main/assets/macchiato.webp",

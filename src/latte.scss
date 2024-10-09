@@ -1,5 +1,16 @@
+/**
+ * @name Catppuccin Latte
+ * @author winston#0001
+ * @authorId 505490445468696576
+ * @version 0.2.0
+ * @description 🎮 Soothing pastel theme for Discord
+ * @website https://github.com/catppuccin/discord
+ * @invite r6Mdz5dpFc
+**/
+
 @use "sass:math";
 @use "@catppuccin/palette/scss/latte" as *;
+@use "@catppuccin/highlightjs/sass/theme";
 
 $brand: $blue;
 
@@ -317,7 +328,6 @@ nav[class*="guilds-"].theme-dark {
     span[class^="expandedFolderBackground"] {
         background-color: lighten($base, 3%);
     }
-
     div[class^="folder"][class*="hover-"] {
         background-color: lighten($base, 8%);
     }
@@ -343,7 +353,6 @@ nav[class*="guilds-"].theme-dark {
 }
 
 @import "theme";
-
-.theme-light {
-    @import "@catppuccin/highlightjs/sass/catppuccin-latte";
+.theme-dark {
+    @include theme.highlights("latte", "hex");
 }
