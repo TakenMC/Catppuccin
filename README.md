@@ -39,6 +39,10 @@
 | 🌺 Macchiato | ![Macchiato preview](assets/macchiato.webp) |
 | 🌿 Mocha     | ![Mocha preview](assets/mocha.webp)         |
 
+> [!NOTE]
+>
+> This may not be the same as the [Catppuccin theme][cat] since I am using a more recent verison of deps.
+
 ## Installation
 
 ### [Replugged][Replugged]
